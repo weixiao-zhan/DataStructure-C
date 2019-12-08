@@ -17,7 +17,7 @@ ADT：抽象数据类型
 3. 多项式
 4. ADT稀疏矩阵
    + 存储方式：三元组
-   + 转置：[稀疏矩阵的快速转置](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A74%20%E9%93%BE%E8%A1%A8/%E7%A8%80%E7%96%8F%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E8%BD%AC%E7%BD%AE)
+   + 转置：[稀疏矩阵的快速转置](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A72%20%E6%95%B0%E7%BB%84%E4%B8%8E%E7%BB%93%E6%9E%84/%E7%A8%80%E7%96%8F%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E8%BD%AC%E7%BD%AE)
    + 矩阵乘法
 5. 多维数组的存储
    + int Array[n][n][n]...
@@ -40,7 +40,7 @@ ADT：抽象数据类型
       + 经典队列
       + 双端队列
    3. 迷宫问题
-   4. ==表达式求值==√
+   4. [表达式求值](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A73%20%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/%E4%B8%AD%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC)
       + 后缀表达式求值
       + 中缀表达式转后缀表达式
       
