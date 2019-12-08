@@ -17,7 +17,7 @@ ADT：抽象数据类型
 3. 多项式
 4. ADT稀疏矩阵
    + 存储方式：三元组
-   + 转置：==快速转置算法==√
+   + 转置：[稀疏矩阵的快速转置](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A74%20%E9%93%BE%E8%A1%A8/%E7%A8%80%E7%96%8F%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E8%BD%AC%E7%BD%AE)
    + 矩阵乘法
 5. 多维数组的存储
    + int Array[n][n][n]...
@@ -57,11 +57,11 @@ ADT：抽象数据类型
    1. ADT
       + 存储：列表、链式
       + 度
-   2. ==二叉树==：Binary Tree √
-      + ==先序表达式建立二叉树== √
+   2. [二叉树](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A75%20%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91)：Binary Tree
+      + [先序表达式建立二叉树](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A75%20%E6%A0%91/%E5%89%8D%E5%BA%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%94%9F%E6%88%90%E4%BA%8C%E5%8F%89%E6%A0%91)
    3. 二叉树的遍历：
       + 前、中、后序:
-      ==中序线索二叉树== √
+      [中序线索二叉树](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A75%20%E6%A0%91/%E4%B8%AD%E5%BA%8F%E7%BA%BF%E7%B4%A2%E4%BA%8C%E5%8F%89%E6%A0%91)
       + ==层序遍历==
       队列实现
    4. 可满足性问题（NP完全问题之一）
@@ -71,21 +71,22 @@ ADT：抽象数据类型
       + 静态搜索 ***等概率***
          顺序查找、折半查找、斐波那契查找、插值查找
       + 静态查找 ***非等概率***
-         + ==二叉查找树==
+         + [二叉查找树](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A75%20%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91)
             1. 保证左子树节点 <= 节点 <= 右子树节点节点
             2. 生成最简单，性能最差，可能退化成链表
-         + ==最优查找树:又称哈夫曼树== √
+         + ==最优查找树:又称哈夫曼树==
             1. 带权路径长度达到最小
                查找概率越大的节点离根越近
                构建时间达到O(n^3)
             2. 等概率情况下：即完全二叉树
                不等概率：利用最小堆生成
          + ==次优查找树==
-            1. 先排序，再选取左右概率差最小的节点进行分裂
-            2. 构建比最优查找树快，查找性能损失可以接受
+            1. 针对的是静态非等概率下的搜索需求
+            同时满足： 优于朴素的二叉搜索树的搜索性能，小于AVL树的构造开支，且引起的性能损失可接受
+            2. 构造方法：先排序，再选取左右概率差最小的节点进行分裂
 
       + 动态搜索树
-         + ==平衡二叉搜索树 - AVL树==
+         + [平衡二叉搜索树 - AVL树](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A75%20%E6%A0%91/AVL%E6%A0%91)
          + 2-3树
             弱化AVL的平衡条件得到
          + 2-3-4树 红黑树
@@ -141,7 +142,7 @@ ADT：抽象数据类型
 本质上是基于排序的搜索，散列的hash()是基于计算的搜索
    1. 最优二叉查找树
    2. 次优秀二叉查找书（非等概率）
-   3. ==AVL树==
+   3. [AVL树](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A75%20%E6%A0%91/AVL%E6%A0%91)
    4. 2-3树
    5. 2-3-4树
    6. 红黑树：2-3-4树的等价形式，空间复杂度更优 
