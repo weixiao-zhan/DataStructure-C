@@ -1,5 +1,4 @@
 //先序表达式建立二叉树
-
 #include<iostream>
 #include<string>
 using namespace std;

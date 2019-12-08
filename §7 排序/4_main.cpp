@@ -1,9 +1,9 @@
-#include"5_3MaxTree.h"
+#include"4Heap.h"
 using namespace std;
 
 int main()
 {
-    MaxTree t(10);
+    MaxHeap t(10);
     t << 5 << 10 << 12 << 1;
 
     int temp = t.pop();

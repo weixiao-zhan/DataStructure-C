@@ -8,33 +8,33 @@ void swap(TreeNode* p1, TreeNode* p2)
     *p2 = temp;
 }
 
-class MaxTree
+class MaxHeap
 {
 private:
     TreeNode* tree;//tree[0] : count; tree[1] : root
     int size;
     void insert(TreeNode);
 public:
-    MaxTree(int size);
+    MaxHeap(int size);
     int GetSize(){return tree[0];}
 
-    MaxTree& operator<<(TreeNode item);
+    MaxHeap& operator<<(TreeNode item);
     TreeNode pop();
 };
 
-MaxTree::MaxTree(int ss)
+MaxHeap::MaxHeap(int ss)
 :size(ss)
 {
     tree = new TreeNode[ss];
     tree[0] = 0;
 }
 
-void MaxTree::insert(TreeNode item)
+void MaxHeap::insert(TreeNode item)
 {
     int i;
 
     if(tree[0] == size){
-        puts("MaxTree full!");
+        puts("MaxHeap full!");
     }
     tree[0]++;
     i = tree[0];
@@ -45,13 +45,13 @@ void MaxTree::insert(TreeNode item)
     tree[i] = item;
 }
 
-TreeNode MaxTree::pop()
+TreeNode MaxHeap::pop()
 {
     int parent, child;
     TreeNode item, temp;
 
     if(tree[0] == 0){
-        puts("MaxTree empty!");
+        puts("MaxHeap empty!");
         return 0;
     }
 
@@ -77,7 +77,7 @@ TreeNode MaxTree::pop()
     return item;
 }
 
-MaxTree& MaxTree::operator<<(TreeNode item)
+MaxHeap& MaxHeap::operator<<(TreeNode item)
 {
     insert(item);
     return (*this);
