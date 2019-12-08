@@ -65,7 +65,7 @@ ADT：抽象数据类型
       + ==层序遍历==
       队列实现
    4. 可满足性问题（NP完全问题之一）
-   5. ==最大堆== √
+   5. [最大堆](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A77%20%E6%8E%92%E5%BA%8F/%E6%9C%80%E5%A4%A7%E5%A0%86)
       + 线性存储
    6. **二叉查找（实现内容关联§10）**
       + 静态搜索 ***等概率***
@@ -131,7 +131,7 @@ ADT：抽象数据类型
       最坏情况 ～ O(n^2)
       平均 ～ O(n * log2(n))
    3. 归并排序
-   4. ==堆排序==√
+   4. [堆排序](https://github.com/hahachicken/DataStructure-C/tree/master/%C2%A77%20%E6%8E%92%E5%BA%8F/%E6%9C%80%E5%A4%A7%E5%A0%86)
       O(n * log2(n))
 
 ##§8 散列
